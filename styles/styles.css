@@ -27,6 +27,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
 .profile-photo {
@@ -84,8 +85,8 @@ nav {
     background: rgba(255, 255, 255, 0.2);
 }
 
-main {
-    max-width: 1200px;
+main, header, nav, footer {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -110,6 +111,17 @@ main {
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 0.5rem;
     text-align: center;
+}
+
+.course-section p {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+.course-section p span {
+    font-size: larger;
+    color: var(--secondary-color);
 }
 
 .course-list {
@@ -176,13 +188,6 @@ main {
 
 .course-card:hover {
     transform: translateY(-5px);
-}
-
-.cse { 
-    background: #ffe6e6;
-}
-.wdd {
-    background: #e6f5ff;
 }
 
 footer {

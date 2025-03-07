@@ -19,7 +19,7 @@
     <!-- JavaScript -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,10 +43,10 @@
             <section class="course-section">
                 <h2>Course Work</h2>
                 <ul class="course-list">
-                    <li>HTML & CSS Fundamentals</li>
-                    <li>JavaScript Basics</li>
-                    <li>Responsive Web Design</li>
-                    <li>Web Accessibility Standards</li>
+                    <li>Develop dynamic websites that use valid HTML and CSS that follow best practices of accessibility and compliance.</li>
+                    <li>Create dynamic web sites that leverage browser APIs, JSON, and remote APIs.</li>
+                    <li>Use industry tools to monitor performance and to optimize the user experience.</li>
+                    <li>Demonstrate the traits of an effective team member (such as clear communication, collaboration, fulfilling assignments, and meeting deadlines).</li>
                 </ul>
             </section>
             
@@ -63,18 +63,12 @@
         <section class="course-section certificate-section">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="button-group">
-                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="cse">CSE</button>
                 <button class="filter-btn" data-filter="wdd">WDD</button>
             </div>
-            <div class="card-container">
-                <div class="course-card cse">CSE 110</div>
-                <div class="course-card cse">CSE 111</div>
-                <div class="course-card cse">CSE 210</div>
-                <div class="course-card wdd">WDD 130</div>
-                <div class="course-card wdd">WDD 131</div>
-                <div class="course-card wdd">WDD 231</div>
-            </div>
+            <p>Total Credits: <span id="total-credits"></span></p>
+            <div class="card-container" id="course-cards"></div>
         </section>
     </main>
 
