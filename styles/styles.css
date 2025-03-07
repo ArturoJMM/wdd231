@@ -194,6 +194,10 @@ footer {
     border-radius: 8px;
 }
 
+footer #lastModified {
+    margin-top: 5px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     #menu-toggle {
