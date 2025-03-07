@@ -1,11 +1,88 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Course home page for Web Design and Development 231">
+    <meta name="author" content="Arturo Mendez">
+    <title>WDD231 Course Home - Arturo J. Mendez</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>New Repository</h1>
+    <header>
+        <img src="images/profile.jpg" alt="Profile photo of John Doe" class="profile-photo">
+        <span class="name">Arturo J. Mendez</span>
+    </header>
+
+    <nav>
+        <button id="menu-toggle">&#9776;</button>
+        <ul id="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">GitHub Profile</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        
+        <section class="course-section">
+            <h2>Course Work</h2>
+            <ul class="course-list">
+                <li>HTML & CSS Fundamentals</li>
+                <li>JavaScript Basics</li>
+                <li>Responsive Web Design</li>
+                <li>Web Accessibility Standards</li>
+            </ul>
+        </section>
+        
+        <section class="course-section">
+            <h2>Lima, Peru</h2>
+            <figure class="peru-figure">
+                <img src="images/peru.jpg" alt="Panorámica de Lima, Perú con edificios coloniales y costa marina">
+                <figcaption>Vista histórica de Lima, capital de Perú</figcaption>
+            </figure>
+        </section>
+        
+        <section class="course-section certificate-section">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="button-group">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cse">CSE</button>
+                <button class="filter-btn" data-filter="wdd">WDD</button>
+            </div>
+            <div class="card-container">
+                <div class="course-card cse">CSE 110</div>
+                <div class="course-card cse">CSE 111</div>
+                <div class="course-card cse">CSE 210</div>
+                <div class="course-card wdd">WDD 130</div>
+                <div class="course-card wdd">WDD 131</div>
+                <div class="course-card wdd">WDD 231</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> 
+            <span class="name">Arturo J. Mendez</span>, 
+            <span class="location">Lima, Peru</span>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
