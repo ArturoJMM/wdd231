@@ -89,12 +89,19 @@ main {
     margin: 0 auto;
 }
 
+.section-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+
+}
+
 .course-section {
     background: white;
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
 }
 
 .course-section h2 {

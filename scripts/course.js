@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const filter = boton.dataset.filter;
 
-            // 4. Recorrer todas las tarjetas
+            
             cards.forEach(card => {
-                // Si el filtro es "all" o coincide con la clase de la tarjeta
+                
                 if (filter === 'all' || card.classList.contains(filter)) {
                     card.style.backgroundColor = '#f1c40f'; 
                 } else {
