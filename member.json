@@ -1,0 +1,23 @@
+{
+    "family_name": "Mendez Gonzalez",
+    "moved_to_ward": "2024-03-15",
+    "number_of_people": 3,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Arturo Mendez",
+            "gender": "Male",
+            "birthdate": "1985-01-04"
+        },
+        {
+            "name": "Rocio Gonzalez",
+            "gender": "Female",
+            "birthdate": "1985-02-09"
+        },
+        {
+            "name": "Oscar Gonzalez",
+            "gender": "Male",
+            "birthdate": "2002-05-16"
+        }
+    ]
+}
