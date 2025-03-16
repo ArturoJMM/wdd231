@@ -19,29 +19,53 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/chamber.css">
     
     <!-- JavaScript -->
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon-chamber.ico">
 </head>
 <body>
     <header>
-        <h1>Directory Page</h1>
-
+        <div class="logo">
+            <img src="images/CCL-LOGO.png" alt="Logo of the Lima Chamber of Commerce">
+            <h1>Lima <br> Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul id="main-nav">
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
+        <section id="hero">
+            <h2>Local Business Directory</h2>
+            <p>Find businesses in Lima.</p>
+            <div id="view-buttons">
+                <button id="grid-view-btn">Grid View</button>
+                <button id="list-view-btn">List View</button>
+            </div>
+        </section>
 
+        <section id="business-directory">
+            <div id="business-list"></div>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; <span id="current-year"></span> Lima Chamber of Commerce | Arturo J. Mendez <br> Last Modified: <span id="last-modified"></span></p>
     </footer>
     
 </body>

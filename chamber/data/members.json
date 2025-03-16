@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Rocio's Fashion Boutique",
+        "address": "123rd Larco Av. Miraflores, Lima",
+        "phone": "+51 123 4567",
+        "website": "https://fashionboutique.com",
+        "image": "fashion.webp",
+        "level": 3
+    },
+    {
+        "name": "Rodizzio Gourmet Restaurant",
+        "address": "456th Union Street, Center of Lima",
+        "phone": "+51 987 6543",
+        "website": "https://gourmetrestaurant.com",
+        "image": "gourmet.webp",
+        "level": 2
+    },
+    {
+        "name": "M&G Legal Consultancy",
+        "address": "789th Arequipa Av, San Isidro",
+        "phone": "+51 321 6540",
+        "website": "https://legalconsultancy.com",
+        "image": "legal.webp",
+        "level": 1
+    },
+    {
+        "name": "Diarom Tech Solutions",
+        "address": "101st Javier Prado Av. San Borja",
+        "phone": "+51 987 6543",
+        "website": "https://techsolutions.com",
+        "image": "tech.webp",
+        "level": 3
+    },
+    {
+        "name": "Aaron Fitness Center",
+        "address": "202nd La Marina Av. Magdalena",
+        "phone": "+51 321 6540",
+        "website": "https://fitnesscenter.com",
+        "image": "fitness.webp",
+        "level": 2
+    },
+    {
+        "name": "SBS Bookstore",
+        "address": "303rd Benavides Av. Surco",
+        "phone": "+51 987 6543",
+        "website": "https://bookstore.com",
+        "image": "bookstore.webp",
+        "level": 1
+    },
+    {
+        "name": "Cussco Travel Agency",
+        "address": "1440th Jose Pardo Av., Miraflores",
+        "phone": "+51 321 6540",
+        "website": "https://travelagency.com",
+        "image": "travel.webp",
+        "level": 3
+    }
+]
