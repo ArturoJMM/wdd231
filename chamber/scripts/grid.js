@@ -54,7 +54,7 @@ function displayListView(members) {
         <tbody>
             ${members.map(member => `
                 <tr>
-                    <td>${member.name}</td>
+                    <td><strong>${member.name}</strong></td>
                     <td>${member.address}</td>
                     <td>${member.phone}</td>
                     <td><a href="${member.website}" target="_blank">${member.website}</a></td>
