@@ -83,9 +83,5 @@ function getMembershipLevel(level) {
 document.getElementById('grid-view-btn').addEventListener('click', () => displayGridView(currentMembers));
 document.getElementById('list-view-btn').addEventListener('click', () => displayListView(currentMembers));
 
-// Footer Information
-document.getElementById('current-year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = document.lastModified;
-
 // Initialize
 fetchMembers();

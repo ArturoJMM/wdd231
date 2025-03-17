@@ -18,6 +18,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--text-fonts);
+
 }
 
 header {
@@ -27,15 +28,25 @@ header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
-
 }
 
-header .logo img {
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo img {
     height: 40px;
     margin: 2rem 3rem 2rem 0;
 }
@@ -55,6 +66,22 @@ nav ul {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1rem;
+}
+
+#main-nav a.active {
+    background: var(--secondary-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#main-nav a:hover {
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 #hero {
