@@ -51,9 +51,9 @@ header {
     margin: 2rem 3rem 1rem 0;
 }
 
-header h1 {
+header h2 {
     font-family: var(--headings-font);
-    font-size: medium;
+    font-size: large;
 }
 
 nav ul {
