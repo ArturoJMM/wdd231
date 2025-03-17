@@ -1,8 +1,8 @@
 :root {
-    --primary-color: rgb(0, 123, 255);
+    --primary-color: rgb(4, 47, 71);
     --secondary-color: #FFC107;
     --background-color: #F8F9FA;
-    --text-color: #343A40;
+    --text-color: #1b1d1f;
     --headings-font: "Cinzel", serif;
     --text-fonts: "Quicksand", sans-serif;
 }
@@ -10,13 +10,22 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     
+    
     .logo img {
         height: 20px;
         margin: 1rem 2rem 1rem 0;
     }
 
-    #menu-toggle {
+    #menu-btn::before {
+        content: "\2630"
+    }
+
+    #menu-btn {
         display: block;
+    }
+
+    #menu-btn.active::before {
+        content: "X"
     }
 
     nav ul {

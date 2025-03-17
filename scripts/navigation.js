@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     links.forEach(link => {
         link.addEventListener("click", (e) => {
-            links.forEach(l => l.classList.remove("active"));
-            e.target.classList.add("active");
+            links.forEach(l => l.classList.add("active"));
+            e.target.classList.remove("active");
             if(window.innerWidth <= 768) {
                 document.getElementById('nav-links').classList.remove('active');
             }

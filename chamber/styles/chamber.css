@@ -1,9 +1,9 @@
 /* Color Palette */
 :root {
-    --primary-color: rgb(0, 123, 255);
+    --primary-color: rgb(4, 47, 71);
     --secondary-color: #FFC107;
     --background-color: #F8F9FA;
-    --text-color: #343A40;
+    --text-color: #1b1d1f;
     --headings-font: "Cinzel", serif;
     --text-fonts: "Quicksand", sans-serif;
 }
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
     padding: 1rem;
     position: relative;
@@ -36,7 +36,7 @@ header {
     align-items: center;
 }
 
-#menu-toggle {
+#menu-btn {
     display: none;
     background: none;
     border: none;
@@ -48,7 +48,7 @@ header {
 
 .logo img {
     height: 40px;
-    margin: 2rem 3rem 2rem 0;
+    margin: 2rem 3rem 1rem 0;
 }
 
 header h1 {
