@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Directory page for the Chamber of Commerce Project, this page provides a list of local business and other organizations that belong to the chamber of commerce.">
     <meta name="author" content="Arturo Jose Mendez Medina">
-    <title>WDD231 Chamber of Commerce - Directory</title>
+    <title>WDD231 Chamber of Commerce - Home Page</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Chamber of Commerce of Lima - Directory Page">
+    <meta property="og:title" content="Chamber of Commerce of Lima - Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://raw.githubusercontent.com/ArturoJMM/wdd231/refs/heads/main/chamber/images/OG-Image.jpg">
     <meta property="og:image:width" content="400">
     <meta property="og:image:height" content="300">
-    <meta property="og:url" content="https://arturojmm.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="This is my Chamber of Commerce Directory page for Web Frontend Development 231. This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta property="og:url" content="https://arturojmm.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="On this platform, you'll find exclusive resources, networking opportunities, business events, and a comprehensive directory of local businesses that will help propel your business to success.">
         
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,8 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/grid.js" defer></script>
-
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
 
     <!-- Favicon -->
@@ -44,36 +45,57 @@
             <h2>Lima <br> Chamber of Commerce</h2>
             
         </div>
-        
         <nav>
             <button id="menu-btn"></button>
             <ul id="main-nav">
-                <li><a href="#index.html" class="nav-link">Home</a></li>
+                <li><a href="#index.html" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About Us</a></li>
                 <li><a href="#events" class="nav-link">Events</a></li>
-                <li><a href="directory.html" class="nav-link active">Directory</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-             <picture>
+        <section class="hero">
+            <picture>
                 <source srcset="images/heroImg_mobile.webp" media="(max-width: 768px)">
                 <img class="heroimg" src="images/hero-homePage.webp" alt="Diarom Home img" height="400">
             </picture>
-            <h1>Lima Chamber of Commerce's Bussines Directory </h1>
-            <p>Find businesses in Lima.</p>
-            <div id="view-buttons">
-                <button id="grid-view-btn">Grid View</button>
-                <button id="list-view-btn">List View</button>
-            </div>
+                <h2>Let your Bussines be part of US</h2>
+                <div>
+                    <a href="contact.html" class="floating-btn">Join Now!</a>
+                </div>
         </section>
-
-        <section id="business-directory">
-            <h3>Business Directory</h3>
-            <div id="business-list"></div>
+        <div class="container">
+            <section class="main-event">
+                <h2>Current Events</h2>
+                <h3>EXPOCOMER 2025 TRADE MISSION</h3>
+                <div class="banner">
+                    <img src="images/expocomer.webp" alt="Expocomer 2025 banner" width="200">
+                    <p>It is the main trade fair in Peru and the region that seeks to strengthen and promote commercial exchange between business sectors from more than 25 countries.</p>
+                </div>
+                <p>Contact Foreign Trade Management for more information about getting involved at 998-348-299. <span><a href="mmalpartida@camaralima.org.pe">mmalpartida@camaralima.org.pe</a></span></p>
+              </section>
+            <section class="main-weather">
+                <h2>Weather in: <br> Lima, Peru</h2>
+                <hr>
+                <div>
+                    <img id="weathericon" src="images/sunny.png" alt="weather icon">
+                    <h2><span id="temperature">?</span>&deg; C</h2>
+                </div>
+                <h2 id="weatherdesc">?</h2>
+                <hr>
+                <h3>Wind Speed: <span id="windspeed">?</span> mph</h3>
+            </section>     
+        </div>
+        <div id="forecast">
+            <h2>3-Day Forecast Weather <hr></h2>
+        </div>
+        <section id="spotlights">
+            <h2>Spotlight Bussines</h2>
+            <div id="spotlight-container"></div>
         </section>
     </main>
 

@@ -85,15 +85,125 @@ nav ul li a {
 }
 
 #hero {
-    text-align: center;
     font-family: var(--headings-font);
-    padding: 3rem;
-    background: linear-gradient(rgba(11, 21, 36), rgba(2, 44, 71));
-    background-size: cover;
-    background-position: center;
-    color: white;
+    text-align: center;
+    background: var(--primary-color);
+    color: aliceblue;
+
 }
 
+/* Home Page */
+
+.hero {
+    font-family: var(--headings-font);
+    text-align: center;
+    background: var(--primary-color);
+    color: aliceblue;
+
+}
+
+.hero h2 {
+    padding: 1rem 0 1.5rem 0;
+}
+
+.floating-btn {
+    position: absolute;
+    bottom: 60%;
+    right: 2%;
+    transform: translateX(-50%);
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 650;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-family: var(--headings-font);
+    
+}
+
+.main-event {
+    background-color: rgb(236, 236, 214);
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.main-event h3, p {
+    font-family: var(--text-fonts);
+}
+
+.main-event p {
+    padding: 1rem;
+}
+
+.main-event span {
+    color: blue;
+    text-decoration: underline;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+.banner img {
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-weather {
+    background-color: antiquewhite;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#forecast {
+    column-count: 3;
+}
+
+#forecast h2 {
+    column-span: all;
+    column-gap: 10px;
+    text-align: center;
+}  
+
+#forecast {
+    background-color: antiquewhite;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    font-family: var(--headings-font);
+}
+
+.forecast-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: var(--text-fonts);
+    
+}
+
+
+/* Directory Page */
 
 #view-buttons button {
     padding: 0.75rem 1.5rem;
@@ -102,7 +212,7 @@ nav ul li a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 #business-directory {
