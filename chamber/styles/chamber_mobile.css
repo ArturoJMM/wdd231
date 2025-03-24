@@ -49,10 +49,7 @@
     /* Home Page */
 
     .hero {
-        font-family: var(--headings-font);
-        text-align: center;
-        background: var(--primary-color);
-        color: aliceblue;
+        padding-bottom: 4rem;
     }
 
     .hero h2 {

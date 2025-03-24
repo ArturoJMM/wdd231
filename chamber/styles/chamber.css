@@ -99,7 +99,7 @@ nav ul li a {
     text-align: center;
     background: var(--primary-color);
     color: aliceblue;
-
+    padding-bottom: 3rem;
 }
 
 .hero h2 {
@@ -107,9 +107,6 @@ nav ul li a {
 }
 
 .floating-btn {
-    position: absolute;
-    bottom: 60%;
-    right: 2%;
     transform: translateX(-50%);
     background: var(--secondary-color);
     color: var(--primary-color);
