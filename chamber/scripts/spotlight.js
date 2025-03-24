@@ -10,11 +10,11 @@ async function loadSpotlights() {
 
     // Filter Gold and Silver members
     const eligibleMembers = members.filter(
-      member => member.level === "Gold" || member.level === "Silver"
+      member => member.level === 2 || member.level === 3
     );
 
     // Randomly select 2 or 3 members
-    const numSpotlights = Math.floor(Math.random() * 2) + 2; // Random number between 2 and 3
+    const numSpotlights = Math.floor(Math.random() * 2) + 2; 
     const selectedMembers = getRandomMembers(eligibleMembers, numSpotlights);
 
     // Display the selected members as cards
@@ -39,17 +39,29 @@ function displaySpotlightCards(members) {
     card.classList.add("spotlight-card");
 
     card.innerHTML = `
-      <img src="images/${member.image}" alt="${member.name} logo" class="spotlight-logo">
+      <img src="images/${member.logo}" alt="${member.name} logo" class="spotlight-logo">
       <h3>${member.name}</h3>
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Website:</strong> <a href="${member.website}" target="_blank">${member.website}</a></p>
-      <p><strong>Membership Level:</strong> ${member.level}</p>
+      <p><strong>Membership Level:</strong> ${getMembershipLevel(member.level)}</p>
     `;
 
     spotlightContainer.appendChild(card);
   });
 }
 
+function getMembershipLevel(level) {
+    switch (level) {
+        case 1:
+            return 'Member';
+        case 2:
+            return 'Silver';
+        case 3:
+            return 'Gold';
+        default:
+            return 'Unknown';
+    }
+}
 // Load spotlights on page load
 loadSpotlights();

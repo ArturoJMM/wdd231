@@ -87,7 +87,25 @@
         color: #fff;
     }
 
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .banner img {
+        width: auto;
+    }
+
+    .main-event p {
+        text-align: justify;
+    }
     
+    #spotlight-container {
+        flex-direction: column;
+    }
 
     footer {
         font-size: 14px;

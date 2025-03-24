@@ -202,6 +202,36 @@ nav ul li a {
     
 }
 
+.spotlights h2 {
+    font-family: var(--headings-font);
+    padding-top: 2rem;
+}
+
+#spotlight-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.spotlight-card {
+    background: linear-gradient(rgba(10, 1, 53, 0.253), rgba(71, 140, 184, 0.295));
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card:hover {
+    background: linear-gradient(rgba(10, 1, 53), rgb(0, 123, 255));
+    color: white;
+}
+
+.spotlight-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 
 /* Directory Page */
 

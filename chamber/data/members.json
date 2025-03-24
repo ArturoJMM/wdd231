@@ -5,6 +5,7 @@
         "phone": "+51 123 4567",
         "website": "https://fashionboutique.com",
         "image": "fashion.webp",
+        "logo": "fashion_logo.webp",
         "level": 3
     },
     {
@@ -13,6 +14,7 @@
         "phone": "+51 987 6543",
         "website": "https://gourmetrestaurant.com",
         "image": "gourmet.webp",
+        "logo": "gourmet_logo.webp",
         "level": 2
     },
     {
@@ -21,6 +23,7 @@
         "phone": "+51 321 6540",
         "website": "https://legalconsultancy.com",
         "image": "legal.webp",
+        "logo": "legal_logo.webp",
         "level": 1
     },
     {
@@ -29,6 +32,7 @@
         "phone": "+51 987 6543",
         "website": "https://techsolutions.com",
         "image": "tech.webp",
+        "logo": "tech_logo.webp",
         "level": 3
     },
     {
@@ -37,6 +41,7 @@
         "phone": "+51 321 6540",
         "website": "https://fitnesscenter.com",
         "image": "fitness.webp",
+        "logo": "fitness_logo.webp",
         "level": 2
     },
     {
@@ -45,14 +50,16 @@
         "phone": "+51 987 6543",
         "website": "https://bookstore.com",
         "image": "bookstore.webp",
+        "logo": "bookstore_logo.webp",
         "level": 1
     },
     {
-        "name": "Cussco Travel Agency",
+        "name": "Cusco Travel Agency",
         "address": "1440th Jose Pardo Av., Miraflores",
         "phone": "+51 321 6540",
         "website": "https://travelagency.com",
         "image": "travel.webp",
+        "logo": "travel_logo.webp",
         "level": 3
     }
 ]
