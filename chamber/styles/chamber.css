@@ -103,8 +103,12 @@ nav ul li a {
     padding-bottom: 3rem;
 }
 
-.hero h2 {
+.hero h1 {
     padding: 1rem 0 1.5rem 0;
+}
+
+#hero h1 {
+    padding: 2rem;
 }
 
 .floating-btn {
