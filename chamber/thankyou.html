@@ -3,18 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory page for the Chamber of Commerce Project, this page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <meta name="description" content="Confirmation page for applicants for be part of the Cahmber of Commerce.">
     <meta name="author" content="Arturo Jose Mendez Medina">
-    <title>WDD231 Chamber of Commerce - Directory</title>
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Chamber of Commerce of Lima - Directory Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/ArturoJMM/wdd231/refs/heads/main/chamber/images/OG-Image.jpg">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="300">
-    <meta property="og:url" content="https://arturojmm.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="This is my Chamber of Commerce Directory page for Web Frontend Development 231. This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+    <title>WDD231 Chamber of Commerce - Confirmation Page</title>
         
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +21,7 @@
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/grid.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 
 
 
@@ -51,7 +42,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About Us</a></li>
                 <li><a href="#events" class="nav-link">Events</a></li>
-                <li><a href="directory.html" class="nav-link active">Directory</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
                 <li><a href="join.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
@@ -64,16 +55,21 @@
                 <img class="heroimg" src="images/hero-homePage.webp" alt="Diarom Home img" height="400">
             </picture>
             <h1>Lima Chamber of Commerce's Bussines Directory </h1>
-            <p>Find businesses in Lima.</p>
-            <div id="view-buttons">
-                <button id="grid-view-btn">Grid View</button>
-                <button id="list-view-btn">List View</button>
-            </div>
         </section>
 
-        <section id="business-directory">
-            <h3>Business Directory</h3>
-            <div id="business-list"></div>
+        <section class="thankyou-container">
+            <h2>Thank You for Your Application!</h2>
+            <p>We have received your membership application. One of our representatives will contact you soon to complete the process.</p>
+            
+            <div class="submission-details">
+                <h3>Your application details:</h3>
+                <div id="formData"></div>
+            </div>
+            
+            <div class="actions">
+                <a href="index.html" class="btn">Return to Home</a>
+                <a href="join.html" class="btn secondary">Submit Another Application</a>
+            </div>
         </section>
     </main>
 

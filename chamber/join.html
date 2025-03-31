@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join page for the Chamber of Commerce Project, this page provides a form to be populate by the entyties who want to be part of the chamber of commerce.">
+    <meta name="author" content="Arturo Jose Mendez Medina">
+    <title>WDD231 Chamber of Commerce - Join Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber_mobile.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-chamber.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/CCL-LOGO.png" alt="Logo of the Lima Chamber of Commerce"></a>
+            <h2>Lima <br> Chamber of Commerce</h2>
+            
+        </div>
+        
+        <nav>
+            <button id="menu-btn"></button>
+            <ul id="main-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="directory.html" class="nav-link">Directory</a></li>
+                <li><a href="join.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+             <picture>
+                <source srcset="images/heroImg_mobile.webp" media="(max-width: 768px)">
+                <img class="heroimg" src="images/hero-homePage.webp" alt="Diarom Home img" height="400">
+            </picture>
+            <h1>Lima Chamber of Commerce's Join Form </h1>
+        </section>
+        
+        <section class="join-container">
+            <div class="form-container">
+                <h2>Membership Application</h2>
+                <p>Complete the following form to join our business community</p>
+                
+                <form method="get" action="thankyou.html">
+                    <label for="firstName">
+                        First Name:
+                        <input type="text" id="firstName" name="firstName" required title="Please enter your first name" autocomplete="given-name">
+                    </label>
+                    
+                    <label for="lastName">
+                        Last Name:
+                        <input type="text" id="lastName" name="lastName" required title="Please enter your last name" autocomplete="family-name">
+                    </label>
+                    
+                    <label for="title">
+                        Position in the organization:
+                        <input type="text" id="title" name="title" title="Enter your position (minimum 7 characters, only letters, spaces and hyphens)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+                    
+                    <label for="email">
+                        Email:
+                        <input type="email" id="email" name="email" required title="Please enter a valid email address" autocomplete="email" placeholder="example@domain.com">
+                    </label>
+                    
+                    <label for="phone">
+                        Mobile Phone:
+                        <input type="tel" id="phone" name="phone" required title="Please enter your mobile phone number" autocomplete="tel">
+                    </label>
+                    
+                    <label for="businessName">
+                        Business/Organization Name:
+                        <input type="text" id="businessName" name="businessName" required title="Please enter your business or organization name" autocomplete="organization">
+                    </label>
+                    
+                    <label for="membershipLevel">
+                        Membership Level:
+                        <select id="membershipLevel" name="membershipLevel" required title="Please select a membership level">
+                            <option value="" disabled selected>Select a level</option>
+                            <option value="np">NP Membership (Non-profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    
+                    <label for="description">
+                        Business/Organization Description:
+                        <textarea id="description" name="description" title="Please provide a brief description of your business or organization" rows="5"></textarea>
+                    </label>
+                    
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    
+                    <input type="submit" value="Submit Application" class="submit-btn">
+                </form>
+            </div>
+
+            <div class="membership-cards">
+                <div class="card np-card" id="np-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations</p>
+                    <p class="price">No cost</p>
+                    <button class="info-btn" onclick="openModal('np-modal')">More information</button>
+                </div>
+                
+                <div class="card bronze-card" id="bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic level for businesses</p>
+                    <p class="price">$100/year</p>
+                    <button class="info-btn" onclick="openModal('bronze-modal')">More information</button>
+                </div>
+                
+                <div class="card silver-card" id="silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Intermediate level for businesses</p>
+                    <p class="price">$200/year</p>
+                    <button class="info-btn" onclick="openModal('silver-modal')">More information</button>
+                </div>
+                
+                <div class="card gold-card" id="gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium level for businesses</p>
+                    <p class="price">$300/year</p>
+                    <button class="info-btn" onclick="openModal('gold-modal')">More information</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modals -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('np-modal')">&times;</span>
+                <h2>NP Membership - Benefits</h2>
+                <ul>
+                    <li>Inclusion in the member directory</li>
+                    <li>Access to networking events</li>
+                    <li>Monthly newsletter</li>
+                    <li>Discounts on workshops and training</li>
+                </ul>
+                <p>Specially designed for non-profit organizations looking to connect with the business community.</p>
+            </div>
+        </div>
+        
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2>Bronze Membership - Benefits</h2>
+                <ul>
+                    <li>All NP Membership benefits</li>
+                    <li>Featured profile in the directory</li>
+                    <li>Access to business advisory sessions (2 per year)</li>
+                    <li>Participation in local business fairs</li>
+                    <li>10% discount on event sponsorships</li>
+                </ul>
+                <p>Ideal for small businesses looking to establish their presence in the business community.</p>
+            </div>
+        </div>
+        
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('silver-modal')">&times;</span>
+                <h2>Silver Membership - Benefits</h2>
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>Featured position on the homepage (rotating)</li>
+                    <li>Access to business advisory sessions (4 per year)</li>
+                    <li>Inclusion in Chamber marketing campaigns</li>
+                    <li>20% discount on event sponsorships</li>
+                    <li>Priority access to exclusive events</li>
+                </ul>
+                <p>Perfect for medium-sized businesses looking to expand their network and visibility.</p>
+            </div>
+        </div>
+        
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('gold-modal')">&times;</span>
+                <h2>Gold Membership - Benefits</h2>
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>Permanent featured position on the homepage</li>
+                    <li>Unlimited business advisory sessions</li>
+                    <li>VIP invitations to exclusive events</li>
+                    <li>30% discount on event sponsorships</li>
+                    <li>Opportunities to present at Chamber events</li>
+                    <li>Access to exclusive market reports</li>
+                    <li>Priority support for procedures and inquiries</li>
+                </ul>
+                <p>The premium membership for established businesses seeking maximum visibility, networking, and support.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Lima Chamber of Commerce | Arturo J. Mendez <br><span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
