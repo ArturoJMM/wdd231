@@ -1,0 +1,19 @@
+/* Color Schema */
+body {
+    background-color: #fff7df;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1, h2 {
+    color: #021840;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Typography */
+p, ul, li {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
