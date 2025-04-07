@@ -672,7 +672,7 @@ input:focus, select:focus, textarea:focus {
 .discover-card address {
     font-style: normal; 
     font-size: 0.9em;
-    color: #555;
+    color: black;
     margin-bottom: 10px;
     grid-area: location;
 }
