@@ -694,7 +694,7 @@ input:focus, select:focus, textarea:focus {
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: center;
-    grid-area: "button";
+    grid-area: button;
 }
 
 @media (min-width: 1024px) {
