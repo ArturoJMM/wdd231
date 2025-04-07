@@ -595,6 +595,7 @@ input:focus, select:focus, textarea:focus {
 
 .discover-title {
     padding: 2rem 0 0.5rem 2rem;
+    font-family: var(--headings-font);
 }
 
 #visit-message-area {
