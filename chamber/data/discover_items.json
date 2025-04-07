@@ -1,0 +1,50 @@
+[
+    {
+      "name": "Plaza Mayor of Lima",
+      "address": "Historic Center of Lima, Lima 15001",
+      "description": "The historic heart of Lima, surrounded by important colonial buildings such as the Government Palace and the Cathedral.",
+      "image": "plaza_mayor.webp"
+    },
+    {
+      "name": "Magic Water Circuit",
+      "address": "Jr. Madre de Dios S/N, Cercado de Lima 15046",
+      "description": "An impressive complex of water fountains with light and music shows in the Park of the Reserve.",
+      "image": "magic_water.webp"
+    },
+    {
+      "name": "Huaca Pucllana",
+      "address": "Calle General Borgoño block 8, Miraflores 15074",
+      "description": "A pre-Incan adobe pyramid located in the middle of the modern district of Miraflores.",
+      "image": "huaca_pucllana.webp"
+    },
+    {
+      "name": "Barranco",
+      "address": "Barranco District, Lima",
+      "description": "The bohemian neighborhood of Lima, known for its street art, galleries, bars, and the famous Bridge of Sighs.",
+      "image": "barranco.webp"
+    },
+    {
+      "name": "Larco Museum",
+      "address": "Av. Simón Bolívar 1515, Pueblo Libre 15084",
+      "description": "Houses a vast collection of Peruvian pre-Columbian art, including pottery, textiles, and metals.",
+      "image": "museo_larco.webp"
+    },
+    {
+      "name": "Park of Love",
+      "address": "Malecón Cisneros, Miraflores 15074",
+      "description": "A romantic park on the Miraflores boardwalk with views of the Pacific Ocean and the sculpture 'The Kiss'.",
+      "image": "parque_amor.webp"
+    },
+    {
+      "name": "Surquillo Market",
+      "address": "Av. Paseo de la Republica 5325, Surquillo 15047",
+      "description": "A vibrant local market where you can find fresh produce, Peruvian ingredients, and try typical food.",
+      "image": "mercado_surquillo.webp"
+    },
+    {
+      "name": "Church and Convent of San Francisco",
+      "address": "Jr. Lampa and Jr. Ancash, Historic Center of Lima",
+      "description": "Famous for its baroque architecture and its underground catacombs housing thousands of skeletal remains.",
+      "image": "san_francisco.webp"
+    }
+  ]

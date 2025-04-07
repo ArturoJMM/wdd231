@@ -117,8 +117,25 @@
         gap: 2rem;
     }
 
+
     footer {
         font-size: 14px;
     }
 
 }
+
+@media only screen and (max-width: 640px) {
+    #discover-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    .discover-card {
+        grid-template-areas: 
+        "image"
+        "title"
+        "description"
+        "location"
+        "button";
+    }    
+}
+
