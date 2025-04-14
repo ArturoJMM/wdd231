@@ -1,0 +1,149 @@
+
+/* Media Query para pantallas móviles */
+@media (max-width: 600px) {
+    /* General Styles */
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    /* Social media navigation section */
+    .social-bar {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-bar img {
+        width: 25px; 
+        margin: 0.5rem;
+    }
+
+    .social-bar h3 {
+        display: none;
+    }
+
+    /* Header */
+    .header-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .logo img {
+        height: 80px;
+        
+    }
+    .title p {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+    }
+    nav a {
+        font-size: 1.5rem; 
+        margin: .5rem 10px;
+    }
+
+    /* Sección Hero */
+    .hero {
+        height: 300px; 
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem; 
+        top: 10%;
+    }
+
+    .hero .catalog-h2 {
+        font-size: 1.5rem;
+    }
+
+    .floating-btn, .catalog-btn {
+        font-size: .6rem; 
+        padding: 8px 15px; 
+    }
+
+    /* Gallery Section */
+    
+    .gallery figcaption {
+        transform: none; 
+    }
+
+    .category h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery {
+        gap: 20px;
+    }
+    .gallery img {
+        width: 90%; 
+        height: auto; 
+    }
+    .gallery figcaption {
+        font-size: 1rem;
+    }
+
+    /* Catalog Page - Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 15px; 
+    }
+    .product-card {
+        padding: 10px; 
+    }
+    .caption h4 {
+        font-size: 1.5rem; 
+    }
+    .caption p {
+        font-size: 1.2rem;
+        color: #021840; 
+    }
+    .price {
+        font-size: 0.9rem; 
+    }
+    .interest-btn {
+        font-size: 1.2rem; 
+        padding: 8px 12px; 
+    }
+   
+    /* Contact Page - Form */
+    .section-form {
+        padding: 1rem; 
+    }
+    .section-form h4 {
+        font-size: 1.2rem;
+         
+    }
+    .form input[type="text"],
+    .form input[type="number"],
+    .form input[type="email"],
+    .form textarea {
+        max-width: 100%; 
+        padding: 0.6rem; 
+    }
+    .form textarea {
+        height: 100px; 
+    }
+    .form label {
+        font-size: 0.8rem; 
+    }
+    .form input[type="submit"] {
+        font-size: 1rem; 
+        padding: 0.6rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+    
+}

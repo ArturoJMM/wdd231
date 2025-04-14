@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diarom - Desserts, Cakes and Catering for all your special events">
+    <title>Diarom - Contact Page</title>
+    <meta name="author" content="Arturo Jose Mendez Medina">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Styles/diarom-large.css">
+    <link rel="stylesheet" href="Styles/diarom-mobile.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="social-bar">
+            <h3>Follow us!</h3>
+            <a href="https://wa.me/+51908906381" target="_blank"><img src="images/Hero Images/whatsapp.png" alt="Whatsapp Logo" width="35"></a>
+            <a href="https://www.facebook.com/share/193n7jDJzJ/" target="_blank"><img src="images/Hero Images/facebook.png" alt="Facebook Logo" width="35"></a>
+            <a href="https://www.instagram.com/diarom2.0" target="_blank"><img src="images/Hero Images/instagram.png" alt="Instagram Logo" width="35"></a>
+            <a href="https://www.tiktok.com/@diarom2.0" target="_blank"><img src="images/Hero Images/tiktok.png" alt="TikTok Logo" width="35"></a>
+        </div>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/Hero Images/Logo-diarom.webp" alt="Diarom Logo" height="80">
+            </div>
+            <div class="title">
+                <p>Desserts, Cakes and Catering for all your special events</p>
+            </div>
+        </div>
+    </header>
+
+   <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <img class="heroimg" src="images/Hero Images/hero-img4.webp" alt="Diarom Home img">              
+                <h2>Here you'll never lose our news</h2>
+                <div>
+                    <a href="catalog.html" class="floating-btn">Products Catalog</a>
+                </div>
+        </section>
+        <!-- Form Section -->
+        <section class="section-form">
+            <h4>If you need some special Cake or Dessert, let us know here:</h4>
+            <form method="get" class="form" id="requirementForm">
+                
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" name="Lname" placeholder="First Name" required>
+
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" name="Lname" placeholder="Last Name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" placeholder="111222333">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="mymail@mail.com">
+
+                <label for="review">Questions or Special Requirements: <span class="optional">(Optional)</span></label>
+                <textarea name="review" id="review"></textarea>
+
+                <input type="submit" value="Send my Requirement">
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#x1F30E; Arturo Mendez. Lima, Perú. &#x1F30E;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
